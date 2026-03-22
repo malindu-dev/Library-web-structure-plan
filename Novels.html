@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e2a38;
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav a:hover {
+        color: #00bcd4;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            width: 100%;
+        }
+    
+        nav a {
+            width: 100%;
+            margin: 5px 0;
+            text-align: left;
+        }
+    }
+    
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-family: Chaparral Pro Light;
+    }
+    
+    .books {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .book-card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    .book-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .book-card:hover {
+        transform: scale(1.02);
+    }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>“Welcome to Novels Section”</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="Pride and Prejudice.jfif" alt="">
+            <h3><u>Pride and Prejudice</u></h3>
+            <h4>💕 A classic romantic story about love and society</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Great Gatsby.jfif" alt="">
+            <h3><u>The Great Gatsby</u></h3>
+            <h4>🎩 A story of wealth, dreams, and tragedy.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="To Kill a Mockingbird.jfif" alt="">
+            <h3><u>To Kill a Mockingbird</u></h3>
+            <h4>⚖️ Justice and human values.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Hobbit.jfif" alt="">
+            <h3><u>The Hobbit</u></h3>
+            <h4>🐉 A fantasy adventure with dragons and treasure.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Harry Potter and the Sorcerer’s Stone.jfif" alt="">
+            <h3><u>Harry Potter and the Sorcerer’s Stone</u></h3>
+            <h4>🧙 Magical journey begins.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Hunger Games.jpg" alt="">
+            <h3><u>The Hunger Games</u></h3>
+            <h4>🔥 Survival and rebellion story</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Twilight.jpg" alt="">
+            <h3><u>Twilight</u></h3>
+            <h4>🧛 A romantic vampire story.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Da Vinci Code.jfif" alt="">
+            <h3><u>The Da Vinci Code</u></h3>
+            <h4>🔍 Mystery and secrets.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Fault in Our Stars.jpg" alt="">
+            <h3><u>The Fault in Our Stars</u></h3>
+            <h4>💔 Emotional love story.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Sherlock Holmes The Hound of the Baskervilles.jpg" alt="">
+            <h3><u>Sherlock Holmes: The Hound of the Baskervilles</u></h3>
+            <h4>🕵️ Mystery detective novel</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

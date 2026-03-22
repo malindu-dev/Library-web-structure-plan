@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e2a38;
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav a:hover {
+        color: #00bcd4;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            width: 100%;
+        }
+    
+        nav a {
+            width: 100%;
+            margin: 5px 0;
+            text-align: left;
+        }
+    }
+    
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-family: Chaparral Pro Light;
+    }
+    
+    .books {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .book-card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    .book-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .book-card:hover {
+        transform: scale(1.02);
+    }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to Higher Education Section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="Advanced Mathematics.jfif" alt="">
+            <h3><u>Advanced Mathematics</u></h3>
+            <h4>➗ Complex problem solving</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Physics Fundamentals.jpg" alt="">
+            <h3><u>Physics Fundamentals</u></h3>
+            <h4>⚡ Laws of motion and energy</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Biology Studies.jfif" alt="">
+            <h3><u>Biology Studies</u></h3>
+            <h4>🧬 Living organisms and systems</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Chemistry Basics.jpg" alt="">
+            <h3><u>Chemistry Basics</u></h3>
+            <h4>🧪 Elements and reactions</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Computer Science Introduction.jpg" alt="">
+            <h3><u>Computer Science Introduction</u></h3>
+            <h4>💻 Programming basics.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Business Management.jfif" alt="">
+            <h3><u>Business Management</u></h3>
+            <h4>📊 Management principles.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Accounting Fundamentals.jpg" alt="">
+            <h3><u>Accounting Fundamentals</u></h3>
+            <h4>💰📒 Financial records.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Economics Basics.jpg" alt="">
+            <h3><u>Economics Basics</u></h3>
+            <h4>📈 Market and economy.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Engineering Concepts.jpg" alt="">
+            <h3><u>Engineering Concepts</u></h3>
+            <h4>⚙️ Technical knowledge.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Information Systems.jfif" alt="">
+            <h3><u>Information Systems</u></h3>
+            <h4>🌐 Data and technology systems</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

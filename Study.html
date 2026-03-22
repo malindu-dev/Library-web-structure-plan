@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+.books {
+    padding: 40px;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.book-card {
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #1e2a38;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #00bcd4;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="books">
+    <h2>Study Section</h2>
+
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="School.jpg" alt="">
+            <h3>School Subjects Books</h3>
+            <a href="school-books.html" class="btn">View Details</a>
+        </div>
+
+        <div class="book-card">
+            <img src="Higher Education Books.jpg" alt="">
+            <h3>Higher Education Books</h3>
+            <a href="Higher.html" class="btn">View Details</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

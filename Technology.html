@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technology Books</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Chaparral Pro Light;
+}
+
+
+.books {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to Technology Section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="ICT Basics for Students.png" alt="">
+            <h3>ICT Basics for Students</h3>
+            <h4>💻 Basics of computer systems and usage</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Learn HTML and CSS.jpg" alt="">
+            <h3>Learn HTML and CSS</h3>
+            <h4>🌐 Build simple websites step by step.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="JavaScript for Beginners.jpg" alt="">
+            <h3>JavaScript for Beginners</h3>
+            <h4>⚡ Learn basic programming concepts</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Python Basics.jpg" alt="">
+            <h3>Python Basics</h3>
+            <h4>🐍 Easy introduction to coding with Python.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Web Development Guide.jfif" alt="">
+            <h3>Web Development Guide</h3>
+            <h4>🌍 Frontend and backend basics.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Computer Networking Basics.jfif" alt="">
+            <h3>Computer Networking Basics</h3>
+            <h4>🌐 How internet and networks work</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Database Fundamentals.jpg" alt="">
+            <h3>Database Fundamentals</h3>
+            <h4>🗄️ Learn about data and databases.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Cyber Security Basics.jpg" alt="">
+            <h3>Cyber Security Basics</h3>
+            <h4>🔐 Stay safe in the digital world.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Artificial Intelligence Introduction.jfif" alt="">
+            <h3>Artificial Intelligence Introduction</h3>
+            <h4>🤖 Basics of AI and machine learning.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Mobile App Development Basics.jpg" alt="">
+            <h3>Mobile App Development Basics</h3>
+            <h4>📱 Create simple mobile apps</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

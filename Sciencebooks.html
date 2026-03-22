@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e2a38;
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav a:hover {
+        color: #00bcd4;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            width: 100%;
+        }
+    
+        nav a {
+            width: 100%;
+            margin: 5px 0;
+            text-align: left;
+        }
+    }
+    
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-family: Chaparral Pro Light;
+    }
+    
+    .books {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .book-card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    .book-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .book-card:hover {
+        transform: scale(1.02);
+    }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to Science Books Section</p> <br>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="Basic Science for Beginners.jfif" alt="">
+            <h3><u>Basic Science for Beginners </u></h3>
+            <h4>🔬 Introduction to simple science concepts</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Physics Made Easy.jpg" alt="">
+            <h3><u>Physics Made Easy</u></h3>
+            <h4>⚡ Learn motion, force, and energy</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Biology Studies1.jpg" alt="">
+            <h3><u>Biology Studies</u></h3>
+            <h4> 🧬 Human body and living organisms</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Chemistry Basics1.jpg">
+            <h3><u>Chemistry Basics</u></h3>
+            <h4>🧪 Elements, atoms, and reactions</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Earth and Space Science.jpg">
+            <h3><u>Earth and Space Science</u></h3>
+            <h4>🌍 Planets, stars, and universe.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Environmental Science.jpg">
+            <h3><u> Environmental Science</u></h3>
+            <h4>🌱 Nature and environment protection.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Fun Science Experiments.jpg">
+            <h3><u> Fun Science Experiments </u></h3>
+            <h4>🧫 Simple experiments for learning.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Science Facts and Discoveries.jpg">
+            <h3><u> Science Facts and Discoveries</u></h3>
+            <h4> 💡 Amazing scientific facts.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Human Body Guide.jpg">
+            <h3><u> Human Body Guide</u></h3>
+            <h4>🫀 Organs and body systems.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Introduction to Robotics.jpg">
+            <h3><u> Introduction to Robotics</u></h3>
+            <h4>🤖 Basics of robots and technology</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

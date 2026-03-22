@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e2a38;
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav a:hover {
+        color: #00bcd4;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            width: 100%;
+        }
+    
+        nav a {
+            width: 100%;
+            margin: 5px 0;
+            text-align: left;
+        }
+    }
+    
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-family: Chaparral Pro Light;
+    }
+    
+    .books {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .book-card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    .book-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .book-card:hover {
+        transform: scale(1.02);
+    }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to kids Learning section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="My First ABC Book.jpeg" alt="">
+            <h3><u>My First ABC Book</u></h3>
+            <h4>🔤 Alphabet letters easy and fun way to learn.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Numbers for Kids.jpg" alt="">
+            <h3><u>Numbers for Kids</u></h3>
+            <h4>🔢 Basic counting and number recognition.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Color and Shapes.jpg" alt="">
+            <h3><u>Color and Shapes</u></h3>
+            <h4>🎨 Learn colors and basic shapes with pictures.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Phonics for Beginners.jpg" alt="">
+            <h3><u>Phonics for Beginners</u></h3>
+            <h4>🔊 Improve reading and pronunciation skills</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Early Science for Kids.jpg" alt="">
+            <h3><u>Early Science for Kids</u></h3>
+            <h4>🔬 Simple science concepts with fun activities.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Basic Math Skills.jpg" alt="">
+            <h3><u>Basic Math Skills</u></h3>
+            <h4>➕ Addition, subtraction, and simple math.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="My First English Book.jpg" alt="">
+            <h3><u>My First English Book</u></h3>
+            <h4>📖 Basic English words and sentences.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Learning Time and Days.jpeg" alt="">
+            <h3><u>Learning Time and Days</u></h3>
+            <h4>⏰ Understand time, days, and calendar basics.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Good Manners Book.jpg" alt="">
+            <h3><u>✨ Good Manners Book</u></h3>
+            <h4>😊 Learn polite behavior and social skills.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Nature and Animals.jpg" alt="">
+            <h3><u>Nature and Animals</u></h3>
+            <h4>🐘 Learn about animals, plants, and environment.</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

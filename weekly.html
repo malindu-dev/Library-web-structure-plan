@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weekly Newspapers</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Chaparral Pro Light;
+}
+
+
+.books {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to Weekly Newspapers Section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="Sunday.png" alt="">
+            <h2>Sunday Observer</h2>
+            <h4>English weekly newspaper with news and features</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Silumina.jpg" alt="">
+            <h2>Silumina</h2>
+            <h4>Popular Sinhala Sunday newspaper.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Rivira.jfif" alt="">
+            <h2>Rivira Sunday</h2>
+            <h4>Weekly newspaper with latest updates.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Deshaya.jfif" alt="">
+            <h2>Deshaya</h2>
+            <h4>Sinhala weekly with modern topics</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Translated Books</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Chaparral Pro Light;
+}
+
+
+.books {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<p>Welcome to Translated Books Section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="The Alchemist (Sinhala Translation).jpg" alt="">
+            <h3>The Alchemist (Sinhala Translation)</h3>
+            <h4>🌟 A journey about dreams and destiny</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Harry Potter (Translated).jpg" alt="">
+            <h3>Harry Potter (Translated)</h3>
+            <h4>🧙 Magical adventures of a young wizard.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Sherlock Holmes Stories (Translated).png" alt="">
+            <h3>Sherlock Holmes Stories</h3>
+            <h4>🔍 Mystery detective stories.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Romeo and Juliet (Translated).jpg" alt="">
+            <h3>Romeo and Juliet (Translated)</h3>
+            <h4>❤️ Classic love story.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Little Prince (Translated).jpg" alt="">
+            <h3>The Little Prince (Translated)</h3>
+            <h4>🌹 A meaningful story about life.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Treasure Island (Translated).jpeg" alt="">
+            <h3>Treasure Island (Translated)</h3>
+            <h4>🏴‍☠️ Pirate adventure story.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Gulliver’s Travels (Translated).jpg" alt="">
+            <h3>Gulliver’s Travels (Translated)</h3>
+            <h4>🌍 Journey to strange lands.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Robinson Crusoe (Translated).jpg" alt="">
+            <h3>Robinson Crusoe (Translated)</h3>
+            <h4>🏝️ Survival on an island.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Around the World in 80 Days.jpg" alt="">
+            <h3>Around the World in 80 Days (Translated)</h3>
+            <h4>✈️ Travel adventure.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Don Quixote (Translated).jpg" alt="">
+            <h3>Don Quixote (Translated)</h3>
+            <h4>🐎 A story of imagination and bravery</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Books</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e2a38;
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    
+    nav a:hover {
+        color: #00bcd4;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            width: 100%;
+        }
+    
+        nav a {
+            width: 100%;
+            margin: 5px 0;
+            text-align: left;
+        }
+    }
+    
+    .books {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    
+    .book-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    
+    .book-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+    
+    .book-card button {
+        padding: 8px 12px;
+        border: none;
+        background: #1e2a38;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .book-card button:hover {
+        background: #00bcd4;
+    }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="books">
+    <h2>Books Categories</h2>
+
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="Kids.jpg" alt="">
+            <h3>👶 Kids</h3>
+            <p>Fun and easy books designed to improve reading skills and creativity for children.</p>
+            <a href="kids-Books.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Study.jpg" alt="">
+            <h3>📖 Study</h3>
+            <p>Educational books for school and higher studies to build strong academic knowledge.</p>
+            <a href="Study.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Science.JPG" alt="">
+            <h3>🔬 Science</h3>
+            <p>Explore the world of science, experiments, and discoveries in an interesting way.</p>
+            <a href="Sciencebooks.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Translated.jpg" alt="">
+            <h3>🌍 Translated</h3>
+            <p>Books translated from different languages to make global knowledge accessible to everyone.</p>
+            <a href="Translated.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Novels.jpeg" alt="">
+            <h3>📘 Novels</h3>
+            <p>Enjoy engaging stories from fiction, romance, mystery, and adventure genres.</p>
+            <a href="Novels.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Technology.jpg" alt="">
+            <h3>💻 Technology</h3>
+            <p>Learn about modern technology, programming, and innovations shaping the future.</p>
+            <a href="Technology.html"><button>View Details</button></a>
+        </div>
+
+        <div class="book-card">
+            <img src="Self-Development.jpg" alt="">
+            <h3>🧠 Self-Development</h3>
+            <p>Improve your skills, mindset, and personal growth with inspiring knowledge.</p>
+            <a href="Self-Development.html"><button>View Details</button></a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

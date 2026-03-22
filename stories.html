@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Chaparral Pro Light;
+}
+
+
+.books {
+    padding: 40px;
+    text-align: center;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+    <h1 class="logo">Book Nest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Books.html">Books</a>
+        <a href="NewsPapers.html">Newspapers</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+
+<p>Welcome to kids stories section</p>
+
+<section class="books">
+    <div class="book-container">
+
+        <div class="book-card">
+            <img src="catapilor.jfif" alt="">
+            <h3><u>The Very Hungry Caterpillar</u></h3>
+            <h4>🍎 A caterpillar’s journey of eating and growing into a butterfly.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Jungle Book.jpeg" alt="">
+            <h3><u>The Jungle Book</u></h3>
+            <h4>🌴 Adventures of Mowgli raised by wolves in the jungle.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Winnie the Pooh.jpg" alt="">
+            <h3><u>Winnie the Pooh</u></h3>
+            <h4>🍯 Fun adventures of Pooh and his friends.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Gruffalo.jpg" alt="">
+            <h3><u>The Gruffalo</u></h3>
+            <h4>🐻 A clever mouse outsmarts dangerous animals.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="The Lion King (Storybook).jpg" alt="">
+            <h3><u>The Lion King</u></h3>
+            <h4>🦁 A lion learns courage and responsibility.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Snow White and the Seven Dwarfs.jpg" alt="">
+            <h3><u>Snow White and the Seven Dwarfs</u></h3>
+            <h4>🍎 A princess story with friendship and courage.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Beauty and the Beast.jfif" alt="">
+            <h3><u>Beauty and the Beast</u></h3>
+            <h4>🌹 A story about love and inner beauty.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Alice in Wonderland.jpg" alt="">
+            <h3><u>Alice in Wonderland</u></h3>
+            <h4>🎩 A magical journey into a strange world.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Peter Pan.jpg" alt="">
+            <h3><u>✨ Peter Pan</u></h3>
+            <h4>A boy who never grows up.</h4>
+        </div>
+
+        <div class="book-card">
+            <img src="Cinderella.jpg" alt="">
+            <h3><u>Cinderella</u></h3>
+            <h4>👑 A magical transformation story.</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
